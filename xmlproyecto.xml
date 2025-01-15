@@ -1,0 +1,61 @@
+<Hospital>
+    <Doctor>
+        <nombre>String</nombre>
+        <especialidad>String</especialidad>
+        <telefono>int</telefono>
+        <email>String</email>
+        <dni>String</dni>
+        <funciones>
+            <supervisarPaciente dni="string">boolean</supervisarPaciente>
+            <atenderCita idCita="int">void</atenderCita>
+            <realizarTratamiento id="int">void</realizarTratamiento>
+            <hacerHospitalizaciones id="int">void</hacerHospitalizaciones>
+            <recetarMedicamento id="int">void</recetarMedicamento>
+            <comprobarSeguro id="Paciente">boolean</comprobarSeguro>
+        </funciones>
+    </Doctor>
+    <Cita>
+        <fechaCita>int</fechaCita>
+        <id>int</id>
+        <horaCita>int</horaCita>
+        <motivoCita>String</motivoCita>
+        <asignarCita dni="String">void</asignarCita>
+    </Cita>
+    <Paciente>
+        <sip>int</sip>
+        <nombre>String</nombre>
+        <nac>Date</nac>
+        <dni>String</dni>
+        <telefono>int</telefono>
+        <funciones>
+            <recibirTratamiento id="int">void</recibirTratamiento>
+            <asociarAseguradora nombre="String">void</asociarAseguradora>
+        </funciones>
+    </Paciente>
+    <Tratamiento>
+        <duracion>int</duracion>
+        <fechaInicio>Date</fechaInicio>
+        <fechaFinal>Date</fechaFinal>
+        <efectosSecundarios>String</efectosSecundarios>
+        <aplicarTratamiento>void</aplicarTratamiento>
+    </Tratamiento>
+    <Hospitalizacion>
+        <id>int</id>
+        <fechaIngreso>Date</fechaIngreso>
+        <fechaAlta>Date</fechaAlta>
+        <area>String</area>
+        <registrarPaciente>void</registrarPaciente>
+    </Hospitalizacion>
+    <Medicamento>
+        <id>int</id>
+        <nombre>String</nombre>
+        <dosis>String</dosis>
+        <frecuencia>String</frecuencia>
+        <observaciones>String</observaciones>
+        <asignarMedicamento>void</asignarMedicamento>
+    </Medicamento>
+    <Asegurado>
+        <aseguradora>String</aseguradora>
+        <validarSeguro>boolean</validarSeguro>
+    </Asegurado>
+</Hospital>

@@ -1,0 +1,75 @@
+{
+      "Doctor": [
+      {
+        "nombre": "String",
+        "especialidad": "String",
+        "telefono": "int",
+        "email": "String",
+        "dni": "String",
+        "funciones": {
+          "supervisarPaciente": { "dni": "string", "return": "boolean" },
+          "atenderCita": { "idCita": "int", "return": "void" },
+          "realizarTratamiento": { "id": "int", "return": "void" },
+          "hacerHospitalizaciones": { "id": "int", "return": "void" },
+          "recetarMedicamento": { "id": "int", "return": "void" },
+          "comprobarSeguro": { "id": "Paciente", "return": "boolean" }
+        }
+      }
+       ],
+      "Cita": [
+      {
+        "fechaCita": "int",
+        "id": "int",
+        "horaCita": "int",
+        "motivoCita": "String",
+        "asignarCita": { "dni": "String", "return": "void" }
+      }
+       ],
+      "Paciente": [
+      {
+        "sip": "int",
+        "nombre": "String",
+        "nac": "Date",
+        "dni": "String",
+        "telefono": "int",
+        "funciones": {
+          "recibirTratamiento": { "id": "int", "return": "void" },
+          "asociarAseguradora": { "nombre": "String", "return": "void" }
+        }
+      }
+       ],
+      "Tratamiento": [
+      {
+        "duracion": "int",
+        "fechaInicio": "Date",
+        "fechaFinal": "Date",
+        "efectosSecundarios": "String",
+        "aplicarTratamiento": "void"
+      }
+       ],
+      "Hospitalizacion": [
+        {
+        "id": "int",
+        "fechaIngreso": "Date",
+        "fechaAlta": "Date",
+        "area": "String",
+        "registrarPaciente": "void"
+      }
+       ],
+      "Medicamento": [
+      {
+        "id": "int",
+        "nombre": "String",
+        "dosis": "String",
+        "frecuencia": "String",
+        "observaciones": "String",
+        "asignarMedicamento": "void"
+      }
+       ],
+      "Asegurado": [
+      {
+        "aseguradora": "String",
+        "validarSeguro": "boolean"
+      }
+     ]
+  }
