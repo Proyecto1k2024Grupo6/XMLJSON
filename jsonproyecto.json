@@ -1,75 +1,75 @@
 {
-      "Doctor": [
-      {
-        "nombre": "String",
-        "especialidad": "String",
-        "telefono": "int",
-        "email": "String",
-        "dni": "String",
-        "funciones": {
-          "supervisarPaciente": { "dni": "string", "return": "boolean" },
-          "atenderCita": { "idCita": "int", "return": "void" },
-          "realizarTratamiento": { "id": "int", "return": "void" },
-          "hacerHospitalizaciones": { "id": "int", "return": "void" },
-          "recetarMedicamento": { "id": "int", "return": "void" },
-          "comprobarSeguro": { "id": "Paciente", "return": "boolean" }
-        }
+  "Doctor": [
+    {
+      "nombre": "Dr. Perez",
+      "especialidad": "Cardiología",
+      "telefono": "123456789",
+      "email": "drperez@hospital.com",
+      "dni": "ABC123",
+      "funciones": {
+        "supervisarPaciente": { "dni": "XYZ987", "return": true },
+        "atenderCita": { "idCita": 1, "return": null },
+        "realizarTratamiento": { "id": 1, "return": null },
+        "hacerHospitalizaciones": { "id": 202, "return": null },
+        "recetarMedicamento": { "id": 1, "return": null },
+        "comprobarSeguro": { "id": "XYZ987", "return": true }
       }
-       ],
-      "Cita": [
-      {
-        "fechaCita": "int",
-        "id": "int",
-        "horaCita": "int",
-        "motivoCita": "String",
-        "asignarCita": { "dni": "String", "return": "void" }
+    }
+  ],
+  "Paciente": [
+    {
+      "sip": 12345,
+      "nombre": "Alejandro Rodriguez",
+      "dni": "XYZ987",
+      "telefono": "987654321",
+      "nac": "1985-04-23",
+      "funciones": {
+        "recibirTratamiento": { "id": 1, "return": null },
+        "asociarAseguradora": { "nombre": "SaludPlus", "return": null }
       }
-       ],
-      "Paciente": [
-      {
-        "sip": "int",
-        "nombre": "String",
-        "nac": "Date",
-        "dni": "String",
-        "telefono": "int",
-        "funciones": {
-          "recibirTratamiento": { "id": "int", "return": "void" },
-          "asociarAseguradora": { "nombre": "String", "return": "void" }
-        }
-      }
-       ],
-      "Tratamiento": [
-      {
-        "duracion": "int",
-        "fechaInicio": "Date",
-        "fechaFinal": "Date",
-        "efectosSecundarios": "String",
-        "aplicarTratamiento": "void"
-      }
-       ],
-      "Hospitalizacion": [
-        {
-        "id": "int",
-        "fechaIngreso": "Date",
-        "fechaAlta": "Date",
-        "area": "String",
-        "registrarPaciente": "void"
-      }
-       ],
-      "Medicamento": [
-      {
-        "id": "int",
-        "nombre": "String",
-        "dosis": "String",
-        "frecuencia": "String",
-        "observaciones": "String",
-        "asignarMedicamento": "void"
-      }
-       ],
-      "Asegurado": [
-      {
-        "aseguradora": "String",
-        "validarSeguro": "boolean"
-      }
-     ]
-  }
+    }
+  ],
+  "Cita": [
+    {
+      "fechaCita": "2025-02-20",
+      "id": 1,
+      "horaCita": "10:30",
+      "motivoCita": "Revisión general",
+      "asignarCita": { "dni": "XYZ987", "return": null }
+    }
+  ],
+  "Medicamento": [
+    {
+      "id": 1,
+      "nombre": "Ibuprofeno",
+      "dosis": "200mg",
+      "frecuencia": "Cada 8 horas",
+      "observaciones": "Ninguna",
+      "asignarMedicamento": null
+    }
+  ],
+  "Tratamiento": [
+    {
+      "duracion": 7,
+      "fechaInicio": "2025-01-20",
+      "fechaFinal": "2025-01-27",
+      "efectosSecundarios": "Mareos",
+      "aplicarTratamiento": null
+    }
+  ],
+  "Hospitalizacion": [
+    {
+      "id": 202,
+      "fechaIngreso": "2025-02-10",
+      "fechaAlta": "2025-02-15",
+      "area": "UCI",
+      "registrarPaciente": null
+    }
+  ],
+  "Asegurado": [
+    {
+      "aseguradora": "SaludPlus",
+      "validarSeguro": true
+    }
+  ]
+}
