@@ -1,61 +1,61 @@
 <Hospital>
     <Doctor>
-        <nombre>String</nombre>
-        <especialidad>String</especialidad>
-        <telefono>int</telefono>
-        <email>String</email>
-        <dni>String</dni>
+        <nombre>Dr. Perez</nombre>
+        <especialidad>Cardiología</especialidad>
+        <telefono>123456789</telefono>
+        <email>drperez@hospital.com</email>
+        <dni>ABC123</dni>
         <funciones>
-            <supervisarPaciente dni="string">boolean</supervisarPaciente>
-            <atenderCita idCita="int">void</atenderCita>
-            <realizarTratamiento id="int">void</realizarTratamiento>
-            <hacerHospitalizaciones id="int">void</hacerHospitalizaciones>
-            <recetarMedicamento id="int">void</recetarMedicamento>
-            <comprobarSeguro id="Paciente">boolean</comprobarSeguro>
+            <supervisarPaciente dni="XYZ987">true</supervisarPaciente>
+            <atenderCita idCita="1"/>
+            <realizarTratamiento id="1"/>
+            <hacerHospitalizaciones id="202"/>
+            <recetarMedicamento id="1"/>
+            <comprobarSeguro id="XYZ987">true</comprobarSeguro>
         </funciones>
     </Doctor>
-    <Cita>
-        <fechaCita>int</fechaCita>
-        <id>int</id>
-        <horaCita>int</horaCita>
-        <motivoCita>String</motivoCita>
-        <asignarCita dni="String">void</asignarCita>
-    </Cita>
     <Paciente>
-        <sip>int</sip>
-        <nombre>String</nombre>
-        <nac>Date</nac>
-        <dni>String</dni>
-        <telefono>int</telefono>
+        <sip>12345</sip>
+        <nombre>Alejandro Rodriguez</nombre>
+        <nac>1985-04-23</nac>
+        <dni>XYZ987</dni>
+        <telefono>987654321</telefono>
         <funciones>
-            <recibirTratamiento id="int">void</recibirTratamiento>
-            <asociarAseguradora nombre="String">void</asociarAseguradora>
+            <recibirTratamiento id="1"/>
+            <asociarAseguradora nombre="SaludPlus"/>
         </funciones>
     </Paciente>
+    <Cita>
+        <fechaCita>2025-02-20</fechaCita>
+        <id>1</id>
+        <horaCita>10:30</horaCita>
+        <motivoCita>Revisión general</motivoCita>
+        <asignarCita dni="XYZ987"/>
+    </Cita>
     <Tratamiento>
-        <duracion>int</duracion>
-        <fechaInicio>Date</fechaInicio>
-        <fechaFinal>Date</fechaFinal>
-        <efectosSecundarios>String</efectosSecundarios>
-        <aplicarTratamiento>void</aplicarTratamiento>
+        <duracion>7</duracion>
+        <fechaInicio>2025-01-20</fechaInicio>
+        <fechaFinal>2025-01-27</fechaFinal>
+        <efectosSecundarios>Mareos</efectosSecundarios>
+        <aplicarTratamiento/>
     </Tratamiento>
     <Hospitalizacion>
-        <id>int</id>
-        <fechaIngreso>Date</fechaIngreso>
-        <fechaAlta>Date</fechaAlta>
-        <area>String</area>
-        <registrarPaciente>void</registrarPaciente>
+        <id>202</id>
+        <fechaIngreso>2025-02-10</fechaIngreso>
+        <fechaAlta>2025-02-15</fechaAlta>
+        <area>UCI</area>
+        <registrarPaciente/>
     </Hospitalizacion>
     <Medicamento>
-        <id>int</id>
-        <nombre>String</nombre>
-        <dosis>String</dosis>
-        <frecuencia>String</frecuencia>
-        <observaciones>String</observaciones>
-        <asignarMedicamento>void</asignarMedicamento>
+        <id>1</id>
+        <nombre>Ibuprofeno</nombre>
+        <dosis>200mg</dosis>
+        <frecuencia>Cada 8 horas</frecuencia>
+        <observaciones>Ninguna</observaciones>
+        <asignarMedicamento/>
     </Medicamento>
     <Asegurado>
-        <aseguradora>String</aseguradora>
-        <validarSeguro>boolean</validarSeguro>
+        <aseguradora>SaludPlus</aseguradora>
+        <validarSeguro>true</validarSeguro>
     </Asegurado>
 </Hospital>
