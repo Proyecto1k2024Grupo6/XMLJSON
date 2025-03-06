@@ -27,6 +27,28 @@
         "recibirTratamiento": { "id": 1, "return": null },
         "asociarAseguradora": { "nombre": "SaludPlus", "return": null }
       }
+    },
+    {
+      "sip": 67890,
+      "nombre": "Maria Gonzalez",
+      "dni": "ABC456",
+      "telefono": "654987321",
+      "nac": "1990-07-15",
+      "funciones": {
+        "recibirTratamiento": { "id": 2, "return": null },
+        "asociarAseguradora": { "nombre": "VidaSalud", "return": null }
+      }
+    },
+    {
+      "sip": 54321,
+      "nombre": "Juan Martinez",
+      "dni": "DEF789",
+      "telefono": "321654987",
+      "nac": "1978-03-10",
+      "funciones": {
+        "recibirTratamiento": { "id": 3, "return": null },
+        "asociarAseguradora": { "nombre": "MedProtec", "return": null }
+      }
     }
   ],
   "Cita": [
@@ -69,6 +91,14 @@
   "Asegurado": [
     {
       "aseguradora": "SaludPlus",
+      "validarSeguro": true
+    },
+    {
+      "aseguradora": "VidaSalud",
+      "validarSeguro": true
+    },
+    {
+      "aseguradora": "MedProtec",
       "validarSeguro": true
     }
   ]
