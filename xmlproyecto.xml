@@ -25,6 +25,39 @@
             <asociarAseguradora nombre="SaludPlus"/>
         </funciones>
     </Paciente>
+    <Paciente>
+        <sip>67890</sip>
+        <nombre>María Fernández</nombre>
+        <nac>1992-08-15</nac>
+        <dni>ABC123</dni>
+        <telefono>654321987</telefono>
+        <funciones>
+            <recibirTratamiento id="2"/>
+            <asociarAseguradora nombre="VidaSegura"/>
+        </funciones>
+    </Paciente>
+    <Paciente>
+        <sip>11223</sip>
+        <nombre>Carlos López</nombre>
+        <nac>1978-12-05</nac>
+        <dni>LMN456</dni>
+        <telefono>123456789</telefono>
+        <funciones>
+            <recibirTratamiento id="3"/>
+            <asociarAseguradora nombre="MedProtec"/>
+        </funciones>
+    </Paciente>
+    <Paciente>
+        <sip>44556</sip>
+        <nombre>Elena Martínez</nombre>
+        <nac>2000-06-20</nac>
+        <dni>OPQ789</dni>
+        <telefono>789123456</telefono>
+        <funciones>
+            <recibirTratamiento id="4"/>
+            <asociarAseguradora nombre="SaludTotal"/>
+        </funciones>
+    </Paciente>
     <Cita>
         <fechaCita>2025-02-20</fechaCita>
         <id>1</id>
